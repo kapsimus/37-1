@@ -13,77 +13,15 @@ class CalcMainWindow : public QMainWindow {
 
 public:
     QLineEdit *lineEdit1 = nullptr, *lineEdit2 = nullptr, *lineResult = nullptr;
-    CalcMainWindow(QWidget *parent = nullptr) : QMainWindow(parent) {}
+    CalcMainWindow(QWidget *parent = nullptr);
+    void resizeEvent(QResizeEvent *event) override;
 
 public slots:
-    void add(){
-        bool ok;
-        int num1 = lineEdit1->text().toInt(&ok);
-        if (!ok) {
-            lineResult->setText("Error");
-            return;
-        }
-        int num2 = lineEdit2->text().toInt(&ok);
-        if (!ok) {
-            lineResult->setText("Error");
-            return;
-        }
-        QString result = QString::number(num1 + num2);
-        lineResult->setText(result);
-    };
-    void sub(){
-        bool ok;
-        int num1 = lineEdit1->text().toInt(&ok);
-        if (!ok) {
-            lineResult->setText("Error");
-            return;
-        }
-        int num2 = lineEdit2->text().toInt(&ok);
-        if (!ok) {
-            lineResult->setText("Error");
-            return;
-        }
-        QString result = QString::number(num1 - num2);
-        lineResult->setText(result);
-
-    };
-    void mult(){
-        bool ok;
-        int num1 = lineEdit1->text().toInt(&ok);
-        if (!ok) {
-            lineResult->setText("Error");
-            return;
-        }
-        int num2 = lineEdit2->text().toInt(&ok);
-        if (!ok) {
-            lineResult->setText("Error");
-            return;
-        }
-        QString result = QString::number(num1 * num2);
-        lineResult->setText(result);
-
-    };
-    void div(){
-        bool ok;
-        int num1 = lineEdit1->text().toInt(&ok);
-        if (!ok) {
-            lineResult->setText("Error");
-            return;
-        }
-        int num2 = lineEdit2->text().toInt(&ok);
-        if (!ok) {
-            lineResult->setText("Error");
-            return;
-        }
-        QString result = QString::number(num1 / num2);
-        lineResult->setText(result);
-
-    };
-    void clear() {
-        lineEdit1->setText("");
-        lineEdit2->setText("");
-        lineResult->setText("");
-    }
+    void add();
+    void sub();
+    void mult();
+    void div();
+    void clear();
 };
 
 #endif //INC_37_1_CALCMAINWINDOW_H

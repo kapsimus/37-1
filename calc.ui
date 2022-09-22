@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>690</width>
-    <height>591</height>
+    <width>326</width>
+    <height>151</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,6 +17,9 @@
    <layout class="QGridLayout" name="gridLayout_2">
     <item row="0" column="0">
      <layout class="QGridLayout" name="gridLayout">
+      <property name="spacing">
+       <number>2</number>
+      </property>
       <item row="2" column="3">
        <widget class="QPushButton" name="divButton">
         <property name="text">
@@ -25,7 +28,14 @@
        </widget>
       </item>
       <item row="0" column="2" colspan="2">
-       <widget class="QLineEdit" name="lineEdit2"/>
+       <widget class="QLineEdit" name="lineEdit2">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+       </widget>
       </item>
       <item row="2" column="2">
        <widget class="QPushButton" name="multButton">
@@ -35,7 +45,14 @@
        </widget>
       </item>
       <item row="1" column="0" colspan="4">
-       <widget class="QLineEdit" name="lineEdit3"/>
+       <widget class="QLineEdit" name="lineEdit3">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+       </widget>
       </item>
       <item row="2" column="1">
        <widget class="QPushButton" name="subButton">
@@ -45,7 +62,14 @@
        </widget>
       </item>
       <item row="0" column="0" colspan="2">
-       <widget class="QLineEdit" name="lineEdit1"/>
+       <widget class="QLineEdit" name="lineEdit1">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+       </widget>
       </item>
       <item row="3" column="0" colspan="4">
        <widget class="QPushButton" name="clearButton">
@@ -70,7 +94,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>690</width>
+     <width>326</width>
      <height>21</height>
     </rect>
    </property>
@@ -87,11 +111,11 @@
    <hints>
     <hint type="sourcelabel">
      <x>84</x>
-     <y>340</y>
+     <y>95</y>
     </hint>
     <hint type="destinationlabel">
      <x>57</x>
-     <y>164</y>
+     <y>150</y>
     </hint>
    </hints>
   </connection>
@@ -102,12 +126,12 @@
    <slot>sub()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>182</x>
-     <y>340</y>
+     <x>161</x>
+     <y>95</y>
     </hint>
     <hint type="destinationlabel">
      <x>245</x>
-     <y>164</y>
+     <y>150</y>
     </hint>
    </hints>
   </connection>
@@ -118,12 +142,12 @@
    <slot>mult()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>348</x>
-     <y>338</y>
+     <x>238</x>
+     <y>94</y>
     </hint>
     <hint type="destinationlabel">
-     <x>337</x>
-     <y>164</y>
+     <x>325</x>
+     <y>150</y>
     </hint>
    </hints>
   </connection>
@@ -134,12 +158,12 @@
    <slot>div()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>517</x>
-     <y>340</y>
+     <x>315</x>
+     <y>95</y>
     </hint>
     <hint type="destinationlabel">
-     <x>337</x>
-     <y>164</y>
+     <x>325</x>
+     <y>150</y>
     </hint>
    </hints>
   </connection>
@@ -150,12 +174,12 @@
    <slot>clear()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>327</x>
-     <y>454</y>
+     <x>315</x>
+     <y>120</y>
     </hint>
     <hint type="destinationlabel">
-     <x>337</x>
-     <y>164</y>
+     <x>325</x>
+     <y>150</y>
     </hint>
    </hints>
   </connection>

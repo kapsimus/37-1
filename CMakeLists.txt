@@ -6,15 +6,13 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 
-set(CMAKE_PREFIX_PATH "D:/Kaps/Qt/5.15.2/mingw81_64/lib/cmake")
-
 find_package(Qt5 COMPONENTS
         Core
         Gui
         Widgets
         REQUIRED)
 
-add_executable(37_1 main.cpp calc.ui include/CalcMainWindow.h)
+add_executable(37_1 main.cpp calc.ui include/CalcMainWindow.h src/CalcMainWindow.cpp)
 target_link_libraries(37_1
         Qt5::Core
         Qt5::Gui
